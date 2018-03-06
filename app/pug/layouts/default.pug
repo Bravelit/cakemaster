@@ -1,0 +1,13 @@
+doctype html
+html
+  include ../includes/head.pug
+  body.body
+    .site
+      include ../includes/header.pug
+      .site__content.content
+        block site-content
+      include ../includes/footer.pug
+      include ../includes/modal.pug
+    script(src='libs/js/jquery.min.js')
+    script(src='libs/js/vendor.min.js')
+    script(src='assets/js/common.min.js')

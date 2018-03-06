@@ -1,0 +1,11 @@
+.button_color_theme
+  background transparent
+  border 1px solid themeColor
+  color themeColor
+  &:active
+    color darken(themeColor, changeColor)
+  &:focus
+    color darken(themeColor, changeColor)
+  &:hover
+    border 1px solid darken(themeColor, changeColor)
+    color darken(themeColor, changeColor)

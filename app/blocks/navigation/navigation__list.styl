@@ -1,0 +1,36 @@
+.navigation__list
+  list-style-type none
+  margin 0
+  padding 0
+  text-align center
+  & > li
+    margin 0 0 20px
+    position relative
+    text-align center
+    transition-duration 0.35s
+    &:last-child
+      margin 0
+    @media only screen and (min-width: navigationBreakPoint)
+      display inline-block
+      margin 0
+    &:hover ul
+      display block
+    & > a
+      display inline-block
+    & > ul
+      background transparent
+      display none
+      left 50%
+      margin 0 0 0 -100px
+      padding 10px 0 0
+      position absolute
+      overflow hidden
+      width 200px
+      z-index 10
+      & > li
+        display block
+        vertical-align top
+        position relative
+        & > a
+          display block
+          padding 5px

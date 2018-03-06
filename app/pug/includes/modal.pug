@@ -1,0 +1,25 @@
+#modal.modal
+  form.modal__form
+    .modal__text Напишите нам свой номер, и наш менеджер свяжется с Вами в течение 15 минут
+    input.modal__input(type='text', placeholder='Ваш телефон')
+    .modal__button
+      button#modal__button.button.button_bg_accent.button_size_large(type='submit')
+        | Отправить
+  #modal__shut.modal__shut.shut
+    i.fa.fa-times(aria-hidden='true')
+
+
+
+//#modal.modal
+  form.modal__form
+    table.modal__table
+      tbody
+        tr
+          td.modal__td
+            span
+              input.modal__input(type='text', placeholder='Ваш телефон')
+          td.modal__td
+            button#modal__button.button.button_bg_accent.button_size_large(type='submit')
+              | Отправить
+  #modal__shut.modal__shut.shut
+    i.fa.fa-times(aria-hidden='true')

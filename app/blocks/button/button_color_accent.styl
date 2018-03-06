@@ -1,0 +1,11 @@
+.button_color_accent
+  background transparent
+  border 1px solid accentColor
+  color accentColor
+  &:active
+    color darken(accentColor, changeColor)
+  &:focus
+    color darken(accentColor, changeColor)
+  &:hover
+    border 1px solid darken(accentColor, changeColor)
+    color darken(accentColor, changeColor)
