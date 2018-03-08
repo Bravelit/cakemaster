@@ -26,12 +26,12 @@ jQuery( document ).ready( function() {
 });
 
 jQuery( document ).ready( function() {
-  jQuery( '.parallax-window' ).parallax({ imageSrc: ['assets/images/main/main.jpg',
-  'assets/images/fact/fact.jpg']});
-});
-
-jQuery( document ).ready( function() {
   jQuery( "a[rel='m_PageScroll2id']" ).mPageScroll2id({
       offset: 120
   });
+});
+
+jQuery( document ).ready( function() {
+  jQuery( '.parallax-window' ).parallax({ imageSrc: ['assets/images/main/main.jpg',
+  'assets/images/fact/fact.jpg']});
 });

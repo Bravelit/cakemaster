@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web project</title>
+    <link rel="stylesheet" href="libs/css/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/common.min.css">
+  </head>
+  <body class="body">
+    <div class="site">
+      <header class="site__header">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Открыть меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="Img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Главная<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Мастер-классы</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="navbar-text navbar-right"><span class="glyphicon glyphicon-phone" aria-hidden="true"> +7 (123)456-09870</span></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="site__content content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <main class="page-main" role="main">
+                <h1 class="section-title">Контакты</h1>
+                <div class="page-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="wrap-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906373222!2d2.0787281749528796!3d41.394897593327535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1sen!2ses!4v1516813835229" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="wrap-contacts">
+                        <ul>
+                          <li>Телефон: +7 (123)456-09870</li>
+                          <li>Адрес: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                          <li>Время работы: с 09:00 до 20:00 без выходных</li>
+                        </ul>
+                      </div>
+                      <div class="wrap-form">
+                        <form>
+                          <div class="form-group">
+                            <div class="input-group">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                              <input class="form-control" id="exampleInputAmount" type="text" placeholder="Ваше имя">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="input-group">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                              <input class="form-control" id="exampleInputAmount" type="text" placeholder="Ваш почтовый ящик">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Задайте вопрос или напишите Ваши пожелания"></textarea>
+                          </div>
+                          <button class="btn btn-danger" type="submit">Отправить сообщение админинстратору</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="site__footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="corpinfo">Master Class by Nika Diaz, 2018</div>
+              <div class="copyright">Использование материала возможно только с согласия владельца</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myModalLabel">Отправьте заявку:</h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-inline">=======
+                <div class="form-group">
+                  <label for="exampleInputName2">Имя</label>
+                  <input class="form-control" id="exampleInputName2" type="text" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail2">Email</label>
+                  <input class="form-control" id="exampleInputEmail2" type="email" placeholder="jane.doe@example.com">
+                </div>
+              </form> ========
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+              <button class="btn btn-danger" type="button">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/vendor.min.js"></script>
+    <script src="assets/js/common.min.js"></script>
+  </body>
+</html>
