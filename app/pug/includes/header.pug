@@ -1,28 +1,33 @@
-header.site__header
-  nav.navbar.navbar-inverse.navbar-static-top
-   .container-fluid
-     .navbar-header
-       button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-         span.sr-only Открыть меню
-         span.icon-bar
-         span.icon-bar
-         span.icon-bar
-       a.navbar-brand(href='#')
-         img(src='Img/logo.png', alt='Logo')
-     #bs-example-navbar-collapse-1.collapse.navbar-collapse
-       ul.nav.navbar-nav
-         li
-           a(href='#')
-             | Главная
-             span.sr-only (current)
-         li
-           a(href='#') Мастер-классы
-         li
-           a(href='#') Рецепты
-         li
-           a(href='#') Блог
-         li
-           a(href='#') Контакты
-       .navbar-text.navbar-right
-         span.glyphicon.glyphicon-phone(aria-hidden='true')
-             |  +7 (123)456-09870
+header.header.site__header
+  nav.navbar.navbar-inverse.navbar-static-top.header__navbar
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#header__navigation', aria-expanded='false')
+          span.sr-only
+            | Открыть меню
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#')
+          img(src='assets/images/logo/logo.png', alt='Logo')
+      #header__navigation.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='http://localhost:3000/')
+              | Главная
+            span.sr-only (current)
+          li
+            a(href='http://localhost:3000/masterclass.html')
+              | Мастер-классы
+          li
+            a(href='http://localhost:3000/recipes.html')
+              | Рецепты
+          li
+            a(href='http://localhost:3000/blog.html')
+              | Блог
+          li
+            a(href='http://localhost:3000/contacts.html')
+              | Контакты
+        .navbar-text.navbar-right.header__phone
+          span.glyphicon.glyphicon-phone(aria-hidden='true')
+          | +7 (123) 456-78-90

@@ -54,7 +54,7 @@ var paths = {
           './app/vendor/font-awesome/css/font-awesome.min.css',
           './app/vendor/owl.carousel/dist/assets/owl.carousel.min.css',
           './app/vendor/owl.carousel/dist/assets/owl.theme.default.min.css',
-          './app/vendor/animate.css/animate.min.css' 
+          './app/vendor/animate.css/animate.min.css'
         ],
         dest: './app/libs/css'
       },
@@ -99,7 +99,7 @@ var paths = {
       dest: './assets/fonts'
     },
     libs: {
-      src: './app/libs/**/*.*',
+      src: ['./app/libs/**/*.*', '!./app/libs/js/jquery.min.js'],
       dest: './libs'
     }
   }

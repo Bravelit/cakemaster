@@ -10,82 +10,75 @@
   </head>
   <body class="body">
     <div class="site">
-      <header class="site__header">
-        <nav class="navbar navbar-inverse navbar-static-top">
+      <header class="header site__header">
+        <nav class="navbar navbar-inverse navbar-static-top header__navbar">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Открыть меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="Img/logo.png" alt="Logo"></a>
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#header__navigation" aria-expanded="false"><span class="sr-only">Открыть меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" alt="Logo"></a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="header__navigation">
               <ul class="nav navbar-nav">
-                <li><a href="#">Главная<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Мастер-классы</a></li>
-                <li><a href="#">Рецепты</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="http://localhost:3000/">Главная</a><span class="sr-only">(current)</span></li>
+                <li><a href="http://localhost:3000/masterclass.html">Мастер-классы</a></li>
+                <li><a href="http://localhost:3000/recipes.html">Рецепты</a></li>
+                <li><a href="http://localhost:3000/blog.html">Блог</a></li>
+                <li><a href="http://localhost:3000/contacts.html">Контакты</a></li>
               </ul>
-              <div class="navbar-text navbar-right"><span class="glyphicon glyphicon-phone" aria-hidden="true"> +7 (123)456-09870</span></div>
+              <div class="navbar-text navbar-right header__phone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+7 (123) 456-78-90</div>
             </div>
           </div>
         </nav>
       </header>
       <div class="site__content content">
-        <section class="main-section">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="wrap-main">
-                  <h1 class="main-title">Мастер классы высочайшего уровня и техники</h1>
-                  <div class="main-desc">Только проверенные рецепты</div>
-                  <div class="wrap-btn">
-                    <button class="btn btn-danger btn-lg" type="button" data-toggle="modal" data-target="#myModal">Записаться</button>
-                  </div>
-                </div>
-              </div>
+        <section class="main section">
+          <div class="main__header">
+            <h1 class="main__title text-center">Мастер классы высочайшего уровня и техники</h1>
+            <div class="main__subtitle text-center">Только проверенные рецепты</div>
+            <div class="wrap-btn text-center">
+              <button class="btn btn-danger btn-lg" type="button" data-toggle="modal" data-target="#myModal">Записаться</button>
             </div>
           </div>
         </section>
-        <section class="serv-section">
+        <section class="section service">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h2 class="section-title">Мастер-классы</h2>
+              <div class="col-sm-12">
+                <h2 class="section__title">Мастер-классы</h2>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <article class="serv-item">
-                  <div class="serv-item-img"><a href="#"><img src="Img/serv/serv.jpg" alt=""></a></div>
-                  <h3 class="serv-item-title"><a href="#">Предложение 1</a></h3>
-                  <div class="serv-item-desc">
+                <article class="service__one">
+                  <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
+                  <h3 class="service__name"><a href="#">Предложение 1</a></h3>
+                  <div class="service__description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
                   </div>
                 </article>
               </div>
               <div class="col-xs-12 col-sm-3col-md-3 col-lg-3">
-                <article class="serv-item">
-                  <div class="serv-item-img"><a href="#"><img src="Img/serv/serv.jpg" alt=""></a></div>
-                  <h3 class="serv-item-title"><a href="#">Предложение 2</a></h3>
-                  <div class="serv-item-desc">
+                <article class="service__one">
+                  <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
+                  <h3 class="service__name"><a href="#">Предложение 2</a></h3>
+                  <div class="service__description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
                   </div>
                 </article>
               </div>
               <div class="col-xs-12 col-sm-3col-md-3 col-lg-3">
-                <article class="serv-item">
-                  <div class="serv-item-img"><a href="#"><img src="Img/serv/serv.jpg" alt=""></a></div>
-                  <h3 class="serv-item-title"><a href="#">Предложение 3</a></h3>
-                  <div class="serv-item-desc">
+                <article class="service__one">
+                  <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
+                  <h3 class="service__name"><a href="#">Предложение 3</a></h3>
+                  <div class="service__description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
                   </div>
                 </article>
               </div>
               <div class="col-xs-12 col-sm-3col-md-3 col-lg-3">
-                <article class="serv-item">
-                  <div class="serv-item-img"><a href="#"><img src="Img/serv/serv.jpg" alt=""></a></div>
-                  <h3 class="serv-item-title"><a href="#">Предложение 4</a></h3>
-                  <div class="serv-item-desc">
+                <article class="service__one">
+                  <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
+                  <h3 class="service__name"><a href="#">Предложение 4</a></h3>
+                  <div class="service__description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
                   </div>
                 </article>
@@ -93,26 +86,26 @@
             </div>
           </div>
         </section>
-        <section class="clients-section">
+        <section class="section client">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h2 class="section-title">Выбор мастер класса</h2>
+                <h2 class="section__title">Выбор мастер класса</h2>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-                <div class="clients-img"><img src="Img/Clients/clients.jpg" alt=""></div>
+                <div class="client__thumb"><img src="assets/images/client/clients.jpg" alt=""></div>
               </div>
               <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                <div class="page-desc">
+                <div class="client__description">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati neque sequi qui, placeat, minima eum laudantium amet. Aliquam dignissimos ullam ipsam fuga accusantium asperiores, vitae molestiae dolor praesentium saepe sit esse sed, laudantium vel quod placeat repudiandae cupiditate modi neque, ea, voluptatum iusto aperiam incidunt rem. Qui, possimus tempora quia. Cupiditate illum ratione doloribus vel, qui a expedita inventore dolorem recusandae soluta excepturi consequatur temporibus quis, debitis veritatis saepe voluptatibus architecto beatae molestiae tempora suscipit repudiandae! Tempore dignissimos suscipit asperiores sapiente rem sunt voluptate natus quidem voluptatem, inventore expedita, perspiciatis soluta qui laudantium iusto, facere numquam. Architecto aut nobis quis?</p>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="wrap-btn">
+                <div class="wrap-btn text-center">
                   <button class="btn btn-danger btn-lg" type="button" data-toggle="modal" data-target="#myModal">Записаться</button>
                 </div>
               </div>
@@ -120,7 +113,7 @@
           </div>
         </section>
       </div>
-      <footer class="site__footer">
+      <footer class="footer site__footer">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
