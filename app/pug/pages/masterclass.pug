@@ -4,55 +4,57 @@ block site__content
   .container
     .row
       .col-xs-12.col-sm-12.col-md-12.col-lg-12
-        main.page-main(role='main')
-          h1.section-title Мастер-классы
-          .page-content
+        .page.masterclass
+          .page__header
+            h1.page__title
+              | Мастер-классы
+          .page__content
             .row
               .col-xs-12.col-sm-3col-md-3.col-lg-3
-                article.service__one
-                  .service__thumb
+                article.masterclass__one
+                  .masterclass__thumb
                     a(href='#')
-                      img(src='assets/Images/service/serv.jpg', alt='')
-                  h3.serv-item-title
+                      img(src='assets/images/masterclass/serv.jpg', alt='')
+                  h3.masterclass__name
                     a(href='#') Предложение 1
-                  .service__description
+                  .masterclass__text
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.
               .col-xs-12.col-sm-3col-md-3.col-lg-3
-                article.service__one
-                  .service__thumb
+                article.masterclass__one
+                  .masterclass__thumb
                     a(href='#')
-                      img(src='assets/Images/service/serv.jpg', alt='')
-                  h3.serv-item-title
+                      img(src='assets/images/masterclass/serv.jpg', alt='')
+                  h3.masterclass__name
                     a(href='#') Предложение 2
-                  .service__description
+                  .masterclass__text
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.
               .col-xs-12.col-sm-3col-md-3.col-lg-3
-                article.service__one
-                  .service__thumb
+                article.masterclass__one
+                  .masterclass__thumb
                     a(href='#')
-                      img(src='assets/Images/service/serv.jpg', alt='')
-                  h3.serv-item-title
+                      img(src='assets/images/masterclass/serv.jpg', alt='')
+                  h3.masterclass__name
                     a(href='#') Предложение 3333
-                  .service__description
+                  .masterclass__text
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.
               .col-xs-12.col-sm-3col-md-3.col-lg-3
-                article.service__one
-                  .service__thumb
+                article.masterclass__one
+                  .masterclass__thumb
                     a(href='#')
-                      img(src='assets/Images/service/serv.jpg', alt='')
-                  h3.serv-item-title
+                      img(src='assets/images/masterclass/serv.jpg', alt='')
+                  h3.masterclass__name
                     a(href='#') Предложение 4
-                  .service__description
+                  .masterclass__text
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.
             .row
               .col-xs-12.col-sm-12.col-md-12.col-lg-12
-                .page-desc
+                .masterclass__description
                   p
                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis culpa natus quaerat aliquid ab corporis quasi veniam consectetur eaque at eos fugit tenetur mollitia, saepe et odio incidunt, ut id fuga. Blanditiis at maiores nam iusto voluptatibus quam accusantium laboriosam maxime, minima doloribus harum, optio quod eum quis nemo provident deleniti sint non ex sit ad vel, porro. Doloremque consectetur vel a officiis cumque in, libero. Impedit blanditiis asperiores laudantium mollitia laborum, minima rem iusto consequuntur! Repellat cum sapiente deleniti alias! Dolorem tenetur voluptatem minima, quas odit unde accusamus. Provident quis eaque, suscipit sapiente minima assumenda blanditiis fugiat at hic.
-        .wrap-btn
-          button.btn.btn-danger.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
-            | Записаться
+          .wrap-btn.text-center
+            button.btn.btn-danger.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+              | Записаться

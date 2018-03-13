@@ -4,11 +4,13 @@ block site__content
   .container
     .row
       .col-xs-12.col-sm-12.col-md-12.col-lg-12
-        main.page-main(role='main')
-          h1.section-title Страница не найдена!
-          .page-content
-            .404__thumb
-              img(src='assets/Images/404/404.jpg', alt='')
-            .404__description
+        .page
+          .page__header
+            h1.page__title
+              | Страница не найдена!
+          .page__content
+            .error-404__thumb
+              img(src='assets/images/404/404.jpg', alt='')
+            .error-404__description
               p
                 | К сожалению, запрашиваемая страница не найдена. Воспользуйтесь основным меню сайта.
