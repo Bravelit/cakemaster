@@ -1,58 +1,30 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package cakemagic
- */
-
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cakemagic' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$cakemagic_description = get_bloginfo( 'description', 'display' );
-			if ( $cakemagic_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cakemagic_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cakemagic' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <?php wp_head(); ?>
+  </head>
+  <body class="body">
+    <div class="site">
+      <header class="header site__header">
+        <nav class="navbar navbar-inverse navbar-static-top header__navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#header__navigation" aria-expanded="false"><span class="sr-only">Открыть меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" alt="Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="header__navigation">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'header',
+                  'container'      => false,
+                  'menu_class'     => 'nav navbar-nav'
+                 ) );
+              ?>
+              <div class="navbar-text navbar-right header__phone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+7 (123) 456-78-90</div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="site__content content">
