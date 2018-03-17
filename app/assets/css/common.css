@@ -266,9 +266,6 @@ video {
   font-size: 14px;
   font-style: italic;
 }
-.corpinfo {
-  color: #fff;
-}
 .error-404__description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +287,9 @@ video {
   width: 100%;
   height: auto;
   margin: 20px auto;
+}
+.corpinfo {
+  color: #fff;
 }
 .footer {
   background: #333;
@@ -327,7 +327,7 @@ video {
 }
 @media only screen and (min-width: 768px) {
   .main__subtitle {
-    font-size: 22px;
+    font-size: 38px;
   }
 }
 .main__title {
@@ -378,26 +378,16 @@ video {
   text-transform: uppercase;
   text-align: center;
   font-size: 28px;
-  margin: 50px 0 20px;
+  margin: 50px 0 50px;
+}
+.mPS2id-highlight {
+  background: #2b6b62;
 }
 .recipe__description p {
   font-size: 15px;
   margin: 20px 0;
   padding-left: 20px;
   border-left: 20px solid #249648;
-}
-.mPS2id-highlight {
-  background: #2b6b62;
-}
-.section {
-  position: relative;
-}
-.section__title {
-  font-family: Roboto_Condensed;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 28px;
-  margin: 50px 0 20px;
 }
 .service__description p {
   font-size: 15px;
@@ -413,7 +403,7 @@ video {
 }
 .service__one {
   text-align: center;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .service__thumb img {
   max-width: 200px;
@@ -424,7 +414,63 @@ video {
           box-shadow: 0 2px 5px rgba(0,0,0,0.45);
   border-radius: 50%;
 }
-.sidebar,
+.sidebar {
+  text-align: center;
+  margin: 160px auto 0;
+  padding: 20px 10px 10px;
+  border: 1px solid #249648;
+  width: 220px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+          box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  position: fixed;
+}
+.sidebar__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sidebar__header {
+  display: inline-block;
+  background-color: #249648;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.sidebar__item a {
+  font-family: "Roboto Condensed";
+  color: #249648;
+  font-size: 16px;
+  border-bottom: 1px dashed #249648;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.sidebar__title {
+  color: #eee;
+  margin: 0;
+}
+.section {
+  position: relative;
+}
+.section__title {
+  font-family: Roboto_Condensed;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  margin: 50px 0 50px;
+}
+.single__description p {
+  font-size: 15px;
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 20px solid #249648;
+}
 .site {
   display: -webkit-box;
   display: -ms-flexbox;
