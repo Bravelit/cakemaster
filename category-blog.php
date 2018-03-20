@@ -12,7 +12,7 @@
           <section class="blog__one">
             <div class="row">
               <div class="col-sm-5 col-md-4 col-lg-3">
-                <a href="#">
+                <a href="<?php echo get_permalink(); ?>">
                   <div class="blog__thumb">
                     <?php the_post_thumbnail( array() ); ?>
                   </div>
