@@ -5,7 +5,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="page masterclass">
         <div class="page__header">
-          <h1 class="page__title">Мастер-класс</h1>
+          <h1 class="page__title"><?php echo single_cat_title(); ?></h1>
         </div>
         <div class="page__content">
           <div class="row">

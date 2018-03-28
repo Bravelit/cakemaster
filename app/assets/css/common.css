@@ -243,7 +243,7 @@ video {
   display: -ms-flexbox;
   display: flex;
   color: #e65100;
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 .blog__description p {
   font-size: 15px;
@@ -262,7 +262,9 @@ video {
 .blog__name {
   margin: 0 10px 0 0;
 }
-.blog__one img,
+.blog__one {
+  margin-bottom: 30px;
+}
 .blog__thumb img {
   display: block;
   margin: 20px auto;
@@ -272,16 +274,6 @@ video {
   height: auto;
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
           box-shadow: 0 2px 5px rgba(0,0,0,0.45);
-}
-.body {
-  background-color: #fff;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  height: 100%;
-  line-height: 1.5;
-  margin: 0 auto;
-  padding: 0;
 }
 .category {
   padding: 30px 0 50px;
@@ -337,6 +329,16 @@ video {
   font-size: 28px;
   margin: 50px 0 50px;
   margin: 50px 0 10px;
+}
+.body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0;
 }
 .client {
   margin-bottom: 50px;
@@ -564,12 +566,6 @@ video {
 .mPS2id-highlight {
   background: #2b6b62;
 }
-.recipe__description p {
-  font-size: 15px;
-  margin: 20px 0;
-  padding-left: 20px;
-  border-left: 20px solid #249648;
-}
 .section {
   position: relative;
 }
@@ -580,30 +576,11 @@ video {
   font-size: 28px;
   margin: 50px 0 50px;
 }
-.service__description p {
+.recipe__description p {
   font-size: 15px;
   margin: 20px 0;
   padding-left: 20px;
   border-left: 20px solid #249648;
-}
-.service__name {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 10px auto;
-}
-.service__one {
-  text-align: center;
-  margin: 40px auto;
-}
-.service__thumb img {
-  max-width: 200px;
-  max-height: 200px;
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
-          box-shadow: 0 2px 5px rgba(0,0,0,0.45);
-  border-radius: 50%;
 }
 .sidebar {
   text-align: center;
@@ -645,6 +622,31 @@ video {
 .sidebar__title {
   color: #eee;
   margin: 0;
+}
+.service__description p {
+  font-size: 15px;
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 20px solid #249648;
+}
+.service__name {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 10px auto;
+}
+.service__one {
+  text-align: center;
+  margin: 40px auto;
+}
+.service__thumb img {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+          box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+  border-radius: 50%;
 }
 .single__description p {
   font-size: 15px;
