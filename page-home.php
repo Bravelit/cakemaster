@@ -2,8 +2,8 @@
 
 <section class="main section">
   <div class="main__header">
-    <h1 class="main__title text-center">Добро пожаловать в кондитерскую мастерскую</h1>
-    <div class="main__subtitle text-center">"Nika Diaz"</div>
+    <h1 class="main__title text-center"><?php bloginfo('description'); ?></h1>
+    <div class="main__subtitle text-center"><?php bloginfo('name'); ?></div>
   </div>
 </section>
 <section class="section service">

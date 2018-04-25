@@ -78,3 +78,58 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
+
+//Filter
+
+function go_filter() {
+	$args = array();
+  $args['meta_query'] = array('relation' => 'AND');
+	global $wp_query;
+
+  if ($_REQUEST['theme']) {
+    $themes = array('relation' => 'OR');
+    foreach ($_REQUEST['theme'] as $value){
+		$themes[] = array(
+			'key' => 'theme',
+			'value' => $value,
+      'type' => 'text',
+      'compare' => 'LIKE'
+			);
+    }
+    $args['meta_query'][] = $themes;
+	}
+
+  if ($_REQUEST['place']) {
+    $places = array('relation' => 'OR');
+    foreach ($_REQUEST['place'] as $value){
+		$places[] = array(
+			'key' => 'place',
+			'value' => $value,
+      'type' => 'text',
+      'compare' => 'LIKE'
+			);
+    }
+    $args['meta_query'][] = $places;
+	}
+
+  if ($_REQUEST['period']) {
+		$args['meta_query'][] = array(
+			'key' => 'period',
+			'value' => $_REQUEST['period'],
+      'type' => 'text',
+      'compare' => 'IN'
+			);
+	}
+
+
+  if ($_REQUEST['genre']) {
+		$args['meta_query'][] = array(
+			'key' => 'genre',
+			'value' => $_REQUEST['genre'],
+      'type' => 'text',
+      'compare' => 'IN'
+			);
+	}
+
+	query_posts(array_merge($args,$wp_query->query));
+}
