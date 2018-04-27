@@ -86,46 +86,10 @@ function go_filter() {
   $args['meta_query'] = array('relation' => 'AND');
 	global $wp_query;
 
-  if ($_REQUEST['theme']) {
-    $themes = array('relation' => 'OR');
-    foreach ($_REQUEST['theme'] as $value){
-		$themes[] = array(
-			'key' => 'theme',
-			'value' => $value,
-      'type' => 'text',
-      'compare' => 'LIKE'
-			);
-    }
-    $args['meta_query'][] = $themes;
-	}
-
-  if ($_REQUEST['place']) {
-    $places = array('relation' => 'OR');
-    foreach ($_REQUEST['place'] as $value){
-		$places[] = array(
-			'key' => 'place',
-			'value' => $value,
-      'type' => 'text',
-      'compare' => 'LIKE'
-			);
-    }
-    $args['meta_query'][] = $places;
-	}
-
-  if ($_REQUEST['period']) {
+  if ($_REQUEST['type']) {
 		$args['meta_query'][] = array(
-			'key' => 'period',
-			'value' => $_REQUEST['period'],
-      'type' => 'text',
-      'compare' => 'IN'
-			);
-	}
-
-
-  if ($_REQUEST['genre']) {
-		$args['meta_query'][] = array(
-			'key' => 'genre',
-			'value' => $_REQUEST['genre'],
+			'key' => 'type',
+			'value' => $_REQUEST['type'],
       'type' => 'text',
       'compare' => 'IN'
 			);

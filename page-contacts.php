@@ -26,24 +26,6 @@
                 </ul>
               </div>
               <form class="form">
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-                    <input class="form-control" id="exampleInputAmount" type="text" placeholder="Ваше имя">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-                    <input class="form-control" id="exampleInputAmount" type="text" placeholder="Ваш почтовый ящик">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="5" placeholder="Задайте вопрос или напишите Ваши пожелания"></textarea>
-                </div>
-                <button class="btn btn-danger" type="submit">Отправить сообщение админинстратору</button>
-              </form>
-              <form class="form">
                 <?php echo do_shortcode( '[contact-form-7 id="65" title="Контактная форма 1"]' ); ?>
               </form>
             </div>

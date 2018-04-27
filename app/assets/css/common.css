@@ -222,6 +222,59 @@ video {
   float: right;
   margin: 10px 0 10px 10px;
 }
+.blog {
+  padding: 30px 0 50px;
+}
+.blog__content img {
+  display: block !important;
+  margin: 20px auto;
+  max-width: 450px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+          box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+}
+.blog__date {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e65100;
+  font-family: 'Pacifico', cursive;
+}
+.blog__description p {
+  font-size: 15px;
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 20px solid #249648;
+}
+.blog__headline {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog__name {
+  margin: 0 10px 0 0;
+}
+.blog__one {
+  margin-bottom: 30px;
+}
+.blog__thumb img {
+  display: block;
+  margin: 20px auto;
+  max-width: 450px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+          box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+}
 .body {
   background-color: #fff;
   color: #333;
@@ -315,59 +368,6 @@ video {
 .contact__list {
   margin: 0;
   padding: 0 20px;
-}
-.blog {
-  padding: 30px 0 50px;
-}
-.blog__content img {
-  display: block !important;
-  margin: 20px auto;
-  max-width: 450px;
-  max-height: 300px;
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
-          box-shadow: 0 2px 5px rgba(0,0,0,0.45);
-}
-.blog__date {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #e65100;
-  font-family: 'Pacifico', cursive;
-}
-.blog__description p {
-  font-size: 15px;
-  margin: 20px 0;
-  padding-left: 20px;
-  border-left: 20px solid #249648;
-}
-.blog__headline {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.blog__name {
-  margin: 0 10px 0 0;
-}
-.blog__one {
-  margin-bottom: 30px;
-}
-.blog__thumb img {
-  display: block;
-  margin: 20px auto;
-  max-width: 450px;
-  max-height: 300px;
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
-          box-shadow: 0 2px 5px rgba(0,0,0,0.45);
 }
 .copyright {
   color: #fff;

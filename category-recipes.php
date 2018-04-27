@@ -8,21 +8,24 @@
           <h1 class="category__title"><?php echo single_cat_title(); ?></h1>
           <form>
           <ul class="category__navigation">
-            <input type="checkbox" name="type" value="bog-presvyataya-troitsa" onchange="this.form.submit()">
-            <li><a href="#">Все</a></li>
-            <li><a href="#">Закуски</a></li>
-            <li><a href="#">Мясо</a></li>
-            <li><a href="#">Напитки</a></li>
-            <li><a href="#">Паста</a></li>
-            <li><a href="#">Салаты</a></li>
-            <li><a href="#">Соусы</a></li>
-            <li><a href="#">Супы</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/">Все</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=zak">Закуски</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=meat">Мясо</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=luiqids">Напитки</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=pasta">Паста</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=salats">Салаты</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=salsa">Соусы</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=soaps">Супы</a></li>
           </ul>
         </form>
         </div>
         <div class="category__content">
           <div class="row">
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php
+              global $query_string;
+              if ($_GET && !empty($_GET)) {
+            	 go_filter();}
+            if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="col-sm-4 col-md-3 category__one">
               <a class="other" href="<?php echo get_permalink(); ?>">
                 <div class="other__transform">

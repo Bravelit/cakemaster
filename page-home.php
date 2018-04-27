@@ -16,10 +16,10 @@
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <article class="service__one">
-          <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
-          <h3 class="service__name"><a href="#">Мастер Класс</a></h3>
+          <div class="service__thumb"><a href="<?php echo get_field('master-link'); ?>"><img src="<?php echo get_field('master-image'); ?>" alt=""></a></div>
+          <h3 class="service__name"><a href="#"><?php echo get_field('master-zagolovok'); ?></a></h3>
           <div class="service__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
+            <p><?php echo get_field('master-description'); ?></p>
           </div>
         </article>
       </div>
