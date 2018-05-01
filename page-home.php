@@ -17,7 +17,7 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <article class="service__one">
           <div class="service__thumb"><a href="<?php echo get_field('master-link'); ?>"><img src="<?php echo get_field('master-image'); ?>" alt=""></a></div>
-          <h3 class="service__name"><a href="#"><?php echo get_field('master-zagolovok'); ?></a></h3>
+          <h3 class="service__name"><a href="#"><?php echo get_field('master-caption'); ?></a></h3>
           <div class="service__description">
             <p><?php echo get_field('master-description'); ?></p>
           </div>
@@ -25,19 +25,19 @@
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <article class="service__one">
-          <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
-          <h3 class="service__name"><a href="#">Рецепты</a></h3>
+          <div class="service__thumb"><a href="<?php echo get_field('recipe-link'); ?>"><img src="<?php echo get_field('recipe-image'); ?>" alt=""></a></div>
+          <h3 class="service__name"><a href="#"><?php echo get_field('recipe-caption'); ?></a></h3>
           <div class="service__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
+            <p><?php echo get_field('recipe-description'); ?></p>
           </div>
         </article>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <article class="service__one">
-          <div class="service__thumb"><a href="#"><img src="assets/images/service/serv.jpg" alt=""></a></div>
-          <h3 class="service__name"><a href="#">Блог</a></h3>
+          <div class="service__thumb"><a href="<?php echo get_field('blog-link'); ?>"><img src="<?php echo get_field('blog-image'); ?>" alt=""></a></div>
+          <h3 class="service__name"><a href="#"><?php echo get_field('blog-caption'); ?></a></h3>
           <div class="service__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur unde veritatis iure. Minus, deserunt.</p>
+            <p><?php echo get_field('blog-description'); ?></p>
           </div>
         </article>
       </div>
