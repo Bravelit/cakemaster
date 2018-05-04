@@ -9,6 +9,7 @@
         </div>
         <div class="page__content">
           <div class="row">
+            <?php mayak_cats_images(); ?>
             <div class="col-xs-12 col-sm-3col-md-3 col-lg-3">
               <article class="masterclass__one">
                 <div class="masterclass__thumb"><a href="#"><img src="assets/images/masterclass/serv.jpg" alt=""></a></div>
@@ -18,6 +19,7 @@
                 </div>
               </article>
             </div>
+
             <div class="col-xs-12 col-sm-3col-md-3 col-lg-3">
               <article class="masterclass__one">
                 <div class="masterclass__thumb"><a href="#"><img src="assets/images/masterclass/serv.jpg" alt=""></a></div>

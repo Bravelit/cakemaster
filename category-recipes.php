@@ -11,7 +11,7 @@
             <li><a href="http://cakemastering.loc/category/recipes/">Все</a></li>
             <li><a href="http://cakemastering.loc/category/recipes/?type=zak">Закуски</a></li>
             <li><a href="http://cakemastering.loc/category/recipes/?type=meat">Мясо</a></li>
-            <li><a href="http://cakemastering.loc/category/recipes/?type=luiqids">Напитки</a></li>
+            <li><a href="http://cakemastering.loc/category/recipes/?type=luqids">Напитки</a></li>
             <li><a href="http://cakemastering.loc/category/recipes/?type=pasta">Паста</a></li>
             <li><a href="http://cakemastering.loc/category/recipes/?type=salats">Салаты</a></li>
             <li><a href="http://cakemastering.loc/category/recipes/?type=salsa">Соусы</a></li>

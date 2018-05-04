@@ -12,7 +12,10 @@
         <nav class="navbar navbar-inverse navbar-static-top header__navbar">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#header__navigation" aria-expanded="false"><span class="sr-only">Открыть меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" alt="Logo"></a>
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#header__navigation" aria-expanded="false"><span class="sr-only">Открыть меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+							<div class="header__logo">
+								<?php the_custom_logo(); ?>
+							</div>
             </div>
             <div class="collapse navbar-collapse" id="header__navigation">
               <?php
@@ -22,7 +25,7 @@
                   'menu_class'     => 'nav navbar-nav'
                  ) );
               ?>
-              <div class="navbar-text navbar-right header__phone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+7 (123) 456-78-90</div>
+              <div class="navbar-text navbar-right header__phone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span><?php echo get_theme_mod('example_tel', ''); ?></div>
             </div>
           </div>
         </nav>

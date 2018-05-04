@@ -6,16 +6,6 @@
       <div class="category">
         <div class="category__header">
           <h1 class="category__title"><?php echo single_cat_title(); ?></h1>
-          <ul class="category__navigation">
-            <li><a href="#">Все</a></li>
-            <li><a href="#">Закуски</a></li>
-            <li><a href="#">Мясо</a></li>
-            <li><a href="#">Напитки</a></li>
-            <li><a href="#">Паста</a></li>
-            <li><a href="#">Салаты</a></li>
-            <li><a href="#">Соусы</a></li>
-            <li><a href="#">Супы</a></li>
-          </ul>
         </div>
         <div class="category__content">
           <div class="row">
