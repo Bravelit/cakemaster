@@ -363,17 +363,13 @@ video {
   margin: 0;
   padding: 0 20px;
 }
+.corpinfo {
+  color: #fff;
+}
 .copyright {
   color: #fff;
   font-size: 14px;
   font-style: italic;
-}
-.corpinfo {
-  color: #fff;
-}
-.footer {
-  background: #333;
-  padding: 30px 0;
 }
 .error-404__description {
   display: -webkit-box;
@@ -396,6 +392,10 @@ video {
   width: 100%;
   height: auto;
   margin: 20px auto;
+}
+.footer {
+  background: #333;
+  padding: 30px 0;
 }
 .header .header__phone {
   color: #ff8c00;
@@ -635,6 +635,20 @@ video {
   border-radius: 3px;
 }
 .sidebar__item a {
+  font-family: "Roboto Condensed";
+  color: #249648;
+  font-size: 16px;
+  border-bottom: 1px dashed #249648;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.sidebar__nav {
+  list-style-type: none;
+}
+.sidebar__nav li {
+  padding: 5px 0;
+}
+.sidebar__nav li a {
   font-family: "Roboto Condensed";
   color: #249648;
   font-size: 16px;

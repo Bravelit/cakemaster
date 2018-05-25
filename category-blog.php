@@ -21,7 +21,7 @@
               <div class="col-sm-7 col-md-8 col-lg-9">
                 <div class="blog__headline">
                   <h3 class="blog__name"><a class="blog__link" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-                  <div class="blog__date"><?php the_date(); ?></div>
+                  <div class="blog__date"><?php echo get_the_date(); ?></div>
                 </div>
                 <a class="blog__link" href="<?php echo get_permalink(); ?>">
                   <div class="blog__description">

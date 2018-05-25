@@ -16,6 +16,7 @@ if ( ! function_exists( 'cakemagic_setup' ) ) :
     add_theme_support( 'post-thumbnails' );
     register_nav_menus( array(
       'header' => esc_html__( 'Header Menu', 'cakemagic' ),
+      'sidebar' => esc_html__( 'Sidebar Menu', 'cakemagic' )
     ) );
     add_theme_support( 'html5', array(
       'search-form',
@@ -96,111 +97,6 @@ function go_filter() {
 	}
 
 	query_posts(array_merge($args,$wp_query->query));
-}
-
-//Добавление изображенияк рубрике
-add_action( 'category_edit_form_fields', 'mayak_update_category_image' , 10, 2 );
-function mayak_update_category_image ( $term, $taxonomy ) {
-?>
-   <style>
-   img{border:3px solid #ccc;}
-   .term-group-wrap p{float:left;}
-   .term-group-wrap input{font-size:18px;font-weight:bold;width:40px;}
-   #bitton_images{font-size:18px;}
-   #bitton_images_remove{font-size:18px;margin:5px 5px 0 0;}
-   </style>
-   <tr class="form-field term-group-wrap">
-     <th scope="row">
-       <label for="id-cat-images">Изображение</label>
-     </th>
-     <td>
-       <p><input type="button" class="button bitton_images" id="bitton_images" name="bitton_images" value="+" /></br>
-       <input type="button" class="button bitton_images_remove" id="bitton_images_remove" name="bitton_images_remove" value="&ndash;" /></p>
-       <?php $id_images = get_term_meta ( $term -> term_id, 'id-cat-images', true ); ?>
-       <input type="hidden" id="id-cat-images" name="id-cat-images" value="<?php echo $id_images; ?>">
-       <div id="cat-image-miniature">
-         <?php if (empty($id_images )) { ?>
-         <img src="http://cakemastering.loc/wp-content/themes/cakemagic/assets/images/wp.png" alt="Zaglushka" width="84" height="89"/>
-         <?php } else {?>
-           <?php echo wp_get_attachment_image ( $id_images, 'thumbnail' ); ?>
-         <?php } ?>
-       </div>
-     </td>
-   </tr>
-<?php
-}
-if(preg_match("#tag_ID=([0-9.]+)#", $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']))
-add_action( 'admin_footer', 'mayak_loader'  );
-function mayak_loader() { ?>
-   <script>
-     jQuery(document).ready( function($) {
-       function mayak_image_upload(button_class) {
-         var mm = true,
-         _orig_send_attachment = wp.media.editor.send.attachment;
-         $('body').on('click', button_class, function(e) {
-           var mb = '#'+$(this).attr('id');
-           var mt = $(mb);
-           mm = true;
-           wp.media.editor.send.attachment = function(props, attachment){
-             if (mm) {
-               $('#id-cat-images').val(attachment.id);
-               $('#cat-image-miniature').html('<img class="custom_media_image" src="" style="margin:0;padding:0;max-height:100px;float:none;" />');
-               $('#cat-image-miniature .custom_media_image').attr('src',attachment.sizes.thumbnail.url).css('display','block');
-             } else {
-               return _orig_send_attachment.apply( mb, [props, attachment] );
-             }
-            }
-         wp.media.editor.open(mt);
-         return false;
-       });
-     }
-     mayak_image_upload('.bitton_images.button');
-     $('body').on('click','.bitton_images_remove',function(){
-       $('#id-cat-images').val('');
-       $('#cat-image-miniature').html('<img class="custom_media_image" src="" style="margin:0;padding:0;max-height:100px;float:none;" />');
-     });
-     $(document).ajaxComplete(function(event, xhr, settings) {
-       var mk = settings.data.split('&');
-       if( $.inArray('action=add-tag', mk) !== -1 ){
-         var mh = xhr.responseXML;
-         $mr = $(mh).find('term_id').text();
-         if($mr!=""){
-           $('#cat-image-miniature').html('');
-         }
-       }
-     });
-   });
-</script>
-<?php }
-add_action( 'edited_category','mayak_updated_category_image' , 10, 2 );
-function mayak_updated_category_image ( $term_id, $tt_id ) {
-   if( isset( $_POST['id-cat-images'] ) && '' !== $_POST['id-cat-images'] ){
-     $image = $_POST['id-cat-images'];
-     update_term_meta ( $term_id, 'id-cat-images', $image );
-   } else {
-     update_term_meta ( $term_id, 'id-cat-images', '' );
-   }
-}
-
-//Вывод подрубрик
-function mayak_cats_images(){
-$ags = array(
-'taxonomy'=>'category',
-'parent' => get_query_var('cat'),
-'meta_query' => array(array('key' => 'id-cat-images',)),
-);
-print_r($ags);
-$terms = get_terms($ags);
-print_r($terms);
- $count = count($terms);
- if($count > 0){
-     foreach ($terms as $term) {
-     $term_taxonomy_id = $term->term_taxonomy_id;
-     $image_id = get_term_meta ( $term_taxonomy_id, 'id-cat-images', true );
-     $image_array = wp_get_attachment_image_src( $image_id, full);
-       echo '1';
-     }
- }
 }
 
 //Дополнительные настройки
